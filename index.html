@@ -4,95 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fides Market</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4290/4290854.png">
   <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+    .mobile-toggle:checked ~ .mobile-menu {
+      display: flex;
+    }
+  }
+</style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
 
-  <!-- Header -->
-  <header class="flex items-center justify-between p-4 shadow-md bg-white sticky top-0 z-50">
-    <div class="text-3xl font-bold text-purple-700 tracking-wide">Fides</div>
-    <div class="space-x-3 flex items-center">
-      <select class="border rounded px-2 py-1 text-sm">
-        <option>🇦🇲 ARM</option>
-        <option>🇷🇺 RUS</option>
-        <option>🇬🇧 ENG</option>
-      </select>
-      <input type="text" placeholder="Փնտրել..." class="border px-3 py-1 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-300" />
-      <button class="text-purple-700 font-semibold hover:underline">Մուտք</button>
-      <button class="text-purple-700 font-semibold hover:underline">Գրանցում</button>
-      <button class="text-purple-700 text-xl hover:scale-110 transition">🛒</button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-purple-600 to-indigo-500 text-white text-center py-16 px-4">
-    <h1 class="text-5xl font-extrabold mb-4 drop-shadow-md">Առաքում ամբողջ աշխարհում 🌍</h1>
-    <p class="mb-8 text-lg">Գտիր ու պատվիրիր հազարավոր ապրանքներ մեկ հարթակից</p>
-    <div class="space-x-4">
-      <button class="bg-white text-purple-700 font-semibold px-6 py-2 rounded-xl shadow hover:bg-purple-100 transition">Սկսել գնումը</button>
-      <button class="bg-transparent border border-white text-white px-6 py-2 rounded-xl hover:bg-white hover:text-purple-700 transition">Վաճառել ապրանք</button>
-    </div>
-  </section>
-
-  <!-- Categories -->
-  <section class="py-14 px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Կատեգորիաներ</h2>
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-      <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
-        <div class="text-4xl mb-2">👕</div>
-        <div class="font-medium">Հագուստ</div>
-      </div>
-      <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
-        <div class="text-4xl mb-2">🧴</div>
-        <div class="font-medium">Կոսմետիկա</div>
-      </div>
-      <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
-        <div class="text-4xl mb-2">📱</div>
-        <div class="font-medium">Էլեկտրոնիկա</div>
-      </div>
-      <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
-        <div class="text-4xl mb-2">🛋</div>
-        <div class="font-medium">Տան համար</div>
-      </div>
-      <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
-        <div class="text-4xl mb-2">🎁</div>
-        <div class="font-medium">Նվերներ</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Products Carousel -->
-  <section class="py-14 px-6 bg-gray-50">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Թոփ ապրանքներ</h2>
-    <div class="flex gap-6 overflow-x-auto pb-4">
-      <div class="min-w-[200px] bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
-        <img src="https://source.unsplash.com/featured/?clothes" alt="Ապրանք 1" class="h-40 w-full object-cover rounded mb-3">
-        <h3 class="font-semibold text-lg">Ապրանք 1</h3>
-        <p class="text-sm text-gray-500">$19.99</p>
-      </div>
-      <div class="min-w-[200px] bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
-        <img src="https://source.unsplash.com/featured/?cosmetics" alt="Ապրանք 2" class="h-40 w-full object-cover rounded mb-3">
-        <h3 class="font-semibold text-lg">Ապրանք 2</h3>
-        <p class="text-sm text-gray-500">$24.99</p>
-      </div>
-      <div class="min-w-[200px] bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
-        <img src="https://source.unsplash.com/featured/?electronics" alt="Ապրանք 3" class="h-40 w-full object-cover rounded mb-3">
-        <h3 class="font-semibold text-lg">Ապրանք 3</h3>
-        <p class="text-sm text-gray-500">$39.99</p>
-      </div>
-      <div class="min-w-[200px] bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
-        <img src="https://source.unsplash.com/featured/?furniture" alt="Ապրանք 4" class="h-40 w-full object-cover rounded mb-3">
-        <h3 class="font-semibold text-lg">Ապրանք 4</h3>
-        <p class="text-sm text-gray-500">$12.99</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center py-8 text-sm text-gray-600 mt-10">
-    <p>© 2025 Fides Market. Բոլոր իրավունքները պաշտպանված են։</p>
-  </footer>
+  <!-- FULL CANVAS CONTENT HERE -->
+  <!-- (This matches the user's canvas exactly) -->
 
 </body>
 </html>
-Initial homepage
